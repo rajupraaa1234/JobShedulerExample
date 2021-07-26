@@ -1,11 +1,9 @@
-package com.example.jobshedulerexample;
+package com.example.jobshedulerexample
 
-import android.os.AsyncTask;
+import android.os.AsyncTask
 
-public class MyAsynckTaskClass extends AsyncTask<Void,Void,String>{
-    @Override
-    protected String doInBackground(Void... voids){
-        String str="BackGround Code Running...";
-        return str;
+open class MyAsynckTaskClass : AsyncTask<Void?, Void?, String>() {
+    protected override fun doInBackground(vararg p0: Void?): String? {
+        return "BackGround Code Running..."
     }
 }
